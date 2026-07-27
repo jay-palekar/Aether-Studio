@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}Aether Studio Project{% endblock %}
+
+{% block content %}
+
+<section class="project-details">
+
+    <div class="project-header">
+
+        <div class="project-image-large">
+            <img src="{{ url_for('static', filename='images/laptop_mockup.png') }}" class="project-image-large" alt="home_page">
+        </div>
+
+        <h1>Aether Studio</h1>
+
+        <p>
+            A modern Flask portfolio website built with responsive design, database integration and admin dashboard.
+        </p>
+
+        <div class="project-links">
+
+            <a href="#" class="primary-btn disabled"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+
+            <a href="https://github.com/jay-palekar/aether-studio" class="secondary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+
+        </div>
+
+    </div>
+
+    <div class="project-info">
+
+        <h2>Tech Stack</h2>
+
+        <div class="tech-badges">
+
+            <span>Python</span>
+            <span>Flask</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>SQLite</span>
+            
+        </div>
+
+        <h2>Key Features</h2>
+
+        <ul>
+
+            <li>Responsive multi-page Flask website</li>
+
+            <li>SQLite powered Contact form with SQLite database</li>
+
+            <li>Secure admin login systems</li>
+
+            <li>Admin dashboard to manage visitor messages</li>
+
+            <li>Smooth scrolling animations</li>
+
+            <li>Portfolio-ready project structure</li>
+
+        </ul>
+
+        <h2>What I Learned</h2>
+
+        <p>
+            Building Aether Studio taught me how to turn an idea into a complete real-world website. I learned how frontend, backend, databases and authentication work together to create a functional web application. More importantly I learned how to structure a project, solve practical problems and think beyond just writing code and think like a user while working as a developer.
+        </p>
+
+        <h2>Challenges Faced</h2>
+
+        <ul>
+
+            <li>Designing a clean and responsive user interface.</li>
+
+            <li>Managing visitor messages using SQLite.</li>
+
+            <li>Building a secure admin login flow.</li>
+
+            <li>Keeping the project modular and easy to maintain.</li>
+
+        </ul>
+
+        <h2>Project Outcome</h2>
+
+        <p>
+            Aether Studio became my first complete portfolio website and my first end-to-end web development project. It represents the point where I moved from writing Python programs to building complete website with a real backend, database and user interaction. This project also became the foundation for learning how real web applications are structured and deployed.
+        </p>
+
+        <div style="text-align: center; margin-top: 50px;">
+
+            <a href="/" class="primary-btn">← Back to Home</a>
+            
+        </div>
+
+    </div>
+    
+</section>
+
+{% endblock %}

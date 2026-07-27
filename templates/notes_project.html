@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}Notes App Project{% endblock %}
+
+{% block content %}
+
+<section class="project-details">
+
+    <div class="project-header">
+
+        <div class="project-image-large">
+            <img src="{{ url_for('static', filename='images/notes_app.png') }}" class="project-image-large" alt="home_page">
+        </div>
+
+        <h1>📝 Notes App</h1>
+
+        <p>
+            A command-line Python application that allows users to create, edit, search and manage notes efficiently while practicing clean function-based programming.
+        </p>
+
+        <div class="project-links">
+
+            <a href="#" class="primary-btn disabled"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+
+            <a href="https://github.com/jay-palekar/notes-app-flask" class="secondary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+
+        </div>
+
+    </div>
+
+    <div class="project-info">
+
+        <h2>Tech Stack</h2>
+
+        <div class="tech-badges">
+
+            <span>Python</span>
+            <span>Flask</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>SQLite</span>
+            
+        </div>
+
+        <h2>Key Features</h2>
+
+        <ul>
+
+            <li>Add notes</li>
+
+            <li>Edit notes</li>
+
+            <li>Delete notes</li>
+            
+            <li>Search notes</li>
+            
+            <li>Count notes</li>
+            
+            <li>Case-insensitive operations</li>
+
+        </ul>
+
+        <h2>What I Learned</h2>
+
+        <p>
+            This project strengthened my understanding of Python functions, lists, loops, string manipultion and writing modular code. It also taught me how to think about user experience even in a command-line application.
+        </p>
+
+        <h2>Challenges Faced</h2>
+
+        <ul>
+
+            <li>Making search case-insensitive</li>
+
+            <li>Editing only the correct note</li>
+
+            <li>Keeping functions</li>
+
+            <li>Avoiding repititive code</li>
+
+        </ul>
+
+        <h2>Project Outcome</h2>
+
+        <p>
+            Notes App became one of my first complete projects and helped build the programming foundation that later made learning Flask much easier.
+        </p>
+
+        <div style="text-align: center; margin-top: 50px;">
+
+            <a href="/" class="primary-btn">← Back to Home</a>
+            
+        </div>
+
+    </div>
+    
+</section>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width =device-width, initial-scale=1.0">
+    <title>{% block title %}Aether Studio{% endblock %}</title>
+
+    <link
+    rel="icon"
+    type="image/png"
+    href="{{ url_for('static', filename='images/favicon_logo.png') }}">
+
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Aether Studio
+        </div>
+
+        <div class="nav-right">
+
+            <ul class="nav-links">
+                <li><a href="/#home">Home</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+
+            <a href="/lets-connect" class="lets-connect-btn">Let's Connect</a>
+
+        </div>
+
+    </nav>
+
+{% block content %}
+
+{% endblock %}
+
+<footer class="footer">
+
+    <p>© 2026 Aether Studio. Built with Flask & ❤️.</p>
+
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

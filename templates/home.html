@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% with messages = get_flashed_messages() %}
+
+    {% if messages %}
+    <div class="flash-message">
+        {{ messages[0] }}
+    </div>
+    {% endif %}
+
+{% endwith %}
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h1>Aether Studio</h1>
+
+        <p>Building modern web applications with clean, scalable solutions.</p>
+
+        <a href="/#services">
+        <button>Get Started</button>
+        </a>
+
+    </div>
+
+    <div class="hero-background">
+
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Website Preview">
+        <!-- Aether<br>
+        Studio -->
+    </div>
+
+</section>
+
+<section id="services" class="services">
+
+    <h2>Our Services</h2>
+    
+    <div class="service-container">
+
+        <div class="service-card">
+            <i class="fa-solid fa-laptop-code service-icon"></i>     
+
+            <h3>Web Development</h3>
+          
+            <p>
+                Modern, responsive and scalable websites built with Flask.
+            </p>
+        </div>
+
+        <div class="service-card">
+
+            <i class="devicon-python-plain colored service-icon"></i>
+
+            <h3>Backend Development</h3>
+
+            <p>
+                Secure APIs and backend systems designed for performance.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+
+            <h3>Responsive Design</h3>
+
+            <p>
+                Websites that look great on desktop, tablets and mobile devices.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects" class="projects">
+
+    <h2>Featured Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='images/laptop_mockup_0.png') }}" alt="Aether Studio Homepage">
+            </div>
+
+            <h3>Aether Studio</h3>
+
+            <p>
+                A modern Flask web application built as a portfolio-ready agency website.
+            </p>
+
+            <p class="tech-stack">
+                Python • Flask • HTML • CSS • SQLite • JavaScript
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="/projects/aether-studio">View Details</a>
+
+                <a href="https://github.com/jay-palekar/aether-studio">GitHub</a>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='images/notes_app_mockup.png') }}" alt="Aether Studio Homepage">
+            </div>
+
+            <h3>Notes App</h3>
+
+            <p>
+                A Python-based notes management application supporting search, edit and delete features.
+            </p>
+
+            <p class="tech-stack">
+                Python • CLI
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="/projects/notes-app">View Details</a>
+
+                <a href="https://github.com/jay-palekar/notes-app-flask">GitHub</a>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about" class="about">
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <h2>About Aether Studio</h2>
+
+            <div class="about-description">
+
+                <p>
+                    Hi, I'm <strong>Jay Palekar</strong>, a Python and Flask developer who enjoys building clean, practical and user-friendly web applications while continuously learning and improving.
+                </p>
+                
+                <p>
+                    <strong>Aether Studio</strong> is my personal web development portfolio where I showcase projects, ideas and my journey as a developer.
+                </p>
+
+                <p>
+                    I'm currently focused on backend development with Python and Flask, and I'm always excited to work on meaningful projects that solve real problems.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="about-visual">
+
+            <div class="browser-mockup">
+
+                <!-- <div class="browser-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> -->
+
+                <div class="browser-body">
+                    <img src="{{ url_for('static', filename='images/branding.png') }}" alt="Aether Studio Homepage">
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2>Let's Build Something Amazing Together.</h2>
+
+    <p>
+        Have an idea, project or business?
+        Let's turn it into a modern digital experience.
+    </p>
+
+    <div class="contact-container">
+
+        <form action="/contact" method="POST">
+
+            <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required>
+
+            <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required>
+
+            <textarea
+            name="message"
+            placeholder="Your Message"
+            required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

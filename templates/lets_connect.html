@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% block title %}Let's Connect | Aether Studio{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Let's Connect</h1>
+
+        <p>
+            Whether you have an idea, a project, or just want to connect,
+            I'd love to hear from you.
+        </p>
+
+    </div>
+
+    <div class="hero-background">
+
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Website Preview">
+        <!-- Aether<br>
+        Studio -->
+    </div>
+
+</section>
+
+<section class="about lets-connect-about">
+
+    <div class="lets-connect-card">
+
+        <h2>What I Offer</h2>
+
+        <div class="offer-list">
+
+            <div class="offer-item">
+            
+                <div class="offer-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+
+                <div class="offer-content">
+                    <h3>Flask Web Apps</h3>
+                    <p>Custom web applications built with Flask.</p>
+                </div>
+            
+            </div>
+
+            <div class="offer-item">
+               
+                <div class="offer-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+
+                <div class="offer-content">
+                    <h3>Backend APIs</h3>
+                    <p>RESTful APIs for smooth & scalable backend.</p>
+                </div>
+                
+            </div>
+
+            <div class="offer-item">
+
+                <div class="offer-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+
+                <div class="offer-content">
+                    <h3>Responsive Websites</h3>
+                    <p>Clean, mobile-friendly & fast websites.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section-divider"></div>
+
+        <h2>My Approach</h2>
+
+        <p>
+            I enjoy understanding problems before writing code. My focus is on building clean, maintainable and practical solutions that provide a smooth user experience.
+        </p>
+
+        <div class="approach-pills">
+
+            <span>
+                <i class="fas fa-circle-check"></i>
+                Clean Code
+            </span>
+
+            <span>
+                <i class="fas fa-circle-check"></i>
+                Practical Solutions
+            </span>
+
+            <span>
+                <i class="fas fa-circle-check"></i>
+                User-Focused Design
+            </span>
+
+        </div>
+
+        <br><br>
+
+        <div class="section-divider"></div>
+
+
+        <h2>Tech Stack</h2>
+
+        <div class="tech-stack-icons">
+
+            <div class="tech-item">
+                <i class="devicon-python-plain colored"></i>
+                <span>Python</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="devicon-flask-original"></i>
+                <span>Flask</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="devicon-sqlite-plain colored"></i>
+                <span>SQLite</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact">
+
+    <h2>Let's Build Something Together</h2>
+
+    <p>
+        Have a project in mind?
+
+        Let's start the conversation.
+    </p>
+
+    <div class="project-buttons">
+
+        <a href="mailto:jaypalekar10125@gmail.com">Email Me</a>
+
+        <a href="https://github.com/jay-palekar"
+        target="_blank"
+        class="github-btn">
+            GitHub
+        </a>
+
+    </div>
+
+    <br><br>
+
+    <p class="email-address">
+        Or email me directly at - 
+
+        <strong>jaypalekar10125@gmail.com</strong>
+    </p>
+
+</section>
+
+{% endblock %}
